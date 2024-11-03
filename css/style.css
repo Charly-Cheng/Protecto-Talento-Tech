@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* configuracion de la pagina global*/
+
 *{
     font-family: "Rethink Sans", sans-serif;
     font-family: "DM Sans", sans-serif;
@@ -10,71 +13,46 @@
 
 
 
+
+/* configuracion del inicio */
+
 .header{
-
-    width: 100vw;
-    height: 20vh;
+    /* width: 100vw; */
+    height: 18vh;
     position: sticky;
-    /* position: relative; */
     top: 0;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* justify-content: space-around;
-    justify-content: space-evenly;
-    justify-content: flex-end; */
     align-items: center;
     z-index: 10;
     .headarfondo {
-        width: 100vw;
-        height: 20vh;
-        opacity: 0.9;
+        width: 100%;
+        height: 100%;
+        opacity: 0.75;
         position: absolute;
         top: 0;
         left: 0;
         z-index: -1;
     }
-
-    /* .divmenu{ */
     div{    
-        /* z-index: 10; */
         nav{
-            /* width: 65vh; */
             margin: 0 30px;
             ul{
                 list-style: none;
-                
-                /* display: flex;
-                flex-wrap: nowrap;
-                flex-direction: row;
-                
-                justify-content:flex-end ;
-                justify-items: center;
-                align-content: center; */
                 li{
                     display: inline-block;
                     margin-right: 15px;
-                    /* width: 100px; */
-                    /* height: 1.8em; */
-                    /* border: 0px solid #510d1b;
-                    border-radius: 15px; */
-                    /* background-color: #fae318; */
-                    /* background: linear-gradient(180deg,#fae318 85%, #000000 100%); */
                     text-align: center;
-    
                     a{
                         text-decoration: none;
-                        color: rgb(53, 49, 1);
+                        color: rgb(216, 203, 56);
                         font-size: 1.3em;
                     }
-    
                 }
             }
         }
-
     }
-
 }
 
 .main{
@@ -83,7 +61,6 @@
     width: 100vw;
     position: relative;
     z-index: 5;
-    
     .principal{
         display: flex;
         flex-direction: column;
@@ -92,8 +69,6 @@
         height: 50vh;
         color: antiquewhite;
         background-image: url(../assets/img/allfondo.jpg);
-
-
         h1{
             color: #ccc01a;
             font-size: 11vh;
@@ -118,28 +93,24 @@
                 border: 3px solid #ccc01a;
             }
         }
-
     }
-
     .productos{
         width: 100vw;
-        background-image: url(../assets/img/pos_backgroung_dark.png);
+        background-image: url(../assets/img/fondoamk.JPG);
         background-size: cover;
         padding: 15px;
         font-family: "Rethink Sans", sans-serif;
-
         .product{
             display: grid;
             grid-template-rows: 36px auto;
             grid-column: auto auto;
-            grid-template-areas: "img h3"
-                                 "img p";
+            grid-template-areas:    "img h3"
+                                    "img p";
             h3{
                 padding-left: 10px;
                 border: #ccc01a 3px solid;
                 grid-area:h3;
                 color: aqua;
-
             }
             img{
                 width: 150px;
@@ -155,9 +126,6 @@
                     color: aqua;
                 }
             }
-       
-
-          
         }
         h2{
             color: #7a080e;
@@ -172,144 +140,25 @@
     }
 }
 
-.maingaleria{
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    position: relative;
-    z-index: 5;
-    
-
-    .galeria{
-        width: 100vw;
-        background-image: url(../assets/img/pos_backgroung_dark.png);
-        background-size: cover;
-        padding: 15px;
-        font-family: "Rethink Sans", sans-serif;
-
-        .product{
-            /* display: grid;
-            grid-template-rows: 36px auto;
-            grid-column: auto auto;
-            grid-template-areas: "img h3"
-                                 "img p"; */
-            h3{
-                padding-left: 10px;
-                border: #ccc01a 3px solid;
-                grid-area:h3;
-                color: aqua;
-
-            }
-            img{
-                width: 150px;
-                grid-area: img;
-                border: #ccc01a 3px solid;
-            }
-           
-       
-
-          
-        }
-        h2{
-            color: #7a080e;
-            a{
-                text-decoration: none;
-                color: aqua;
-            }
-        }
-        div{
-            margin: 10px;
-        }
-    }
-}
-
-
-.headergaleria{
-    display: inline-block;
-    width: 100vw;
-    height: 20vh;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    .gheader{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        .headarfondo {
-            width: 100vw;
-            height: 20vh;
-            opacity: 0.9;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
-        }
-        div{    
-            nav{
-                
-                margin: 0 30px;
-                ul{
-                    list-style: none;
-                    li{
-                        display: inline-block;
-                        margin-right: 15px;
-                        text-align: center;
-                        a{
-                            text-decoration: none;
-                            color: rgb(53, 49, 1);
-                            font-size: 1.3em;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .subheader{
-        
-        h2{
-            position: absolute;
-            z-index: 10;
-            top: 70px;
-            left: 70px;
-            a{
-                font-size: 0.8em;
-                text-decoration: none;
-                color: rgb(0, 0, 0);
-                background: linear-gradient(180deg,#e7d910 90%, #392717 100%);
-                border-radius: 25px;
-            }
-        }
-    }
-
-}
 
 .logo{
-    /* width:auto; */
     height: 10vh;
-    /* display: inline-block; */
     z-index: 10;
 }
-
-
-
-
 
 
 .footer{
     background-color: rgb(60, 59, 68);
     color: aliceblue;
-    height: 55vh;
+    /* height: 55vh; */
     width: 100vw;
     text-align: center;
     display: inline-flex;
-    justify-content: space-between;
-    /* position: relative; */
-
+    justify-content: center;
+    flex-wrap: wrap;
     section{
-        margin-top: 2%;
+        margin: 5% auto;
                 width: calc((100%-20px) / 4);
-
         nav{
             ul{
                 list-style: none;
@@ -323,7 +172,6 @@
                 }
             }
         }
-
     }
 
     .fa-brands{
@@ -354,10 +202,179 @@
         right: 0px;
         z-index: 15;
     }
+}
 
+
+
+
+
+
+/* configuracion de la pagina de producto */
+
+.headergaleria{
+    display: inline-block;
+    width: 100vw;
+    height: 20vh;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    .gheader{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .headarfondo {
+            width: 100vw;
+            height: 20vh;
+            opacity: 0.75;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        div{    
+            nav{
+                
+                margin: 0 30px;
+                ul{
+                    list-style: none;
+                    li{
+                        display: inline-block;
+                        margin-right: 15px;
+                        text-align: center;
+                        a{
+                            text-decoration: none;
+                            color: rgb(216, 203, 56);
+                            font-size: 1.3em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .subheader{
+        
+        h2{
+            position: absolute;
+            z-index: 10;
+            top: 70px;
+            left: 70px;
+            a{
+                font-size: 0.8em;
+                text-decoration: none;
+                color: rgb(0, 0, 0);
+                background: linear-gradient(180deg,#e7d910 90%, #392717 100%);
+                border-radius: 25px;
+            }
+        }
+    }
 
 }
 
+
+
+.maingaleria{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    position: relative;
+    z-index: 5;
+    
+    .galeria{
+        width: 100vw;
+        background-image: url(../assets/img/fondoamk.JPG);
+        background-size: cover;
+        padding: 15px;
+        font-family: "Rethink Sans", sans-serif;
+        .product{
+            h3{
+                
+                padding-left: 10px;
+                border: #ccc01a 3px solid;
+                color: aqua;
+            }
+            .galeriaproductos{
+                display: flex;
+                gap: 5px;
+                align-items: center;
+                flex-wrap: wrap;
+                div{
+                    text-align: center;  
+                    
+                    padding: 15px;
+                    
+                    /* border: #ccc01a 3px solid; */
+                    box-shadow: #3b5998 0px 0px 5px 5px;
+                    h4{
+                        font-size: 1.2em;
+                    }
+                    h5{
+                        font-size: 1em;
+                    }
+                    img{
+                        width: 150px;
+                    }
+                }
+            }
+        }
+        h2{
+            color: #7a080e;
+            a{
+                text-decoration: none;
+                color: aqua;
+            }
+        }
+        div{
+            margin: 10px;
+        }
+    }
+}
+
+.mainposventas{
+    position: relative;
+    z-index: 5;
+    background-image: url(../assets/img/fondoamk.JPG);
+    background-size: cover;
+    text-align: center;
+    h1{
+        padding: 10px;
+    }
+    section{
+        h2{
+            padding: 10px;
+        }
+        padding: 0 25px 25px 25px;
+        display: inline-block;
+        box-shadow: #3b5998 0px 0px 5px 5px;
+
+    } 
+
+}
+
+
+
+/* Configuracion de la pagina de contacto */
+
+.maincontacto{
+    position: relative;
+    z-index: 5;
+    background-image: url(../assets/img/fondoamk.JPG);
+    background-size: cover;
+    text-align: center;
+    h1{
+        padding: 10px;
+    }
+    section{
+        h2{
+            padding: 10px;
+        }
+        padding: 0 25px 25px 25px;
+        display: inline-block;
+        box-shadow: #3b5998 0px 0px 5px 5px;
+
+    } 
+
+}
 
 
 
