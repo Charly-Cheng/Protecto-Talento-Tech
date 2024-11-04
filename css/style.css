@@ -37,7 +37,7 @@
     }
     div{    
         nav{
-            margin: 0 30px;
+            /* margin: 0 30px; */
             ul{
                 list-style: none;
                 li{
@@ -58,14 +58,14 @@
 .main{
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    /* width: 100vw; */
     position: relative;
     z-index: 5;
     .principal{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        width: 100vw;
+        /* width: 100vw; */
         height: 50vh;
         color: antiquewhite;
         background-image: url(../assets/img/allfondo.jpg);
@@ -80,7 +80,7 @@
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
-            width: 65vh;
+            /* width: 65vh; */
             height: 25vh;
             margin: 0 auto;
             border: 10px double #510d1b;
@@ -235,7 +235,7 @@
         div{    
             nav{
                 
-                margin: 0 30px;
+                /* padding: 0 30px; */
                 ul{
                     list-style: none;
                     li{
@@ -288,13 +288,14 @@
         font-family: "Rethink Sans", sans-serif;
         .product{
             h3{
-                
+                text-align: center;
                 padding-left: 10px;
                 border: #ccc01a 3px solid;
                 color: aqua;
             }
             .galeriaproductos{
                 display: flex;
+                justify-content: center;
                 gap: 5px;
                 align-items: center;
                 flex-wrap: wrap;
@@ -373,6 +374,62 @@
         box-shadow: #3b5998 0px 0px 5px 5px;
 
     } 
+
+}
+
+
+/*Configuracion de modo mobile */
+
+@media only screen and (max-width: 835px) {
+    .main{
+        .principal{
+            h1{
+                color: #ccc01a;
+                font-size: 6vh;
+                font-weight: bold;
+                text-align: center;
+            }
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                margin: 0 auto;
+                border: 10px double #510d1b;
+                backdrop-filter: blur(15px);
+                text-align: center;
+                a{
+                    text-decoration: none;
+                    font-size: 1rem;
+                    color: salmon;
+                    border: 3px solid #ccc01a;
+                }
+            }
+        }
+        
+    }
+
+    .headergaleria{
+        height: 35vh;
+        .gheader{
+            .headarfondo {
+                height: 35vh;
+            }
+        }
+        .subheader{
+            h2{
+                top: 20vh;
+                left: 5px;
+            }
+        }
+    }
+
+    .mainposventas{
+        iframe{
+            width: 100%;
+        }
+    
+    }
 
 }
 
