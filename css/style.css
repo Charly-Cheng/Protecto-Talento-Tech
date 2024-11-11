@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 /* configuracion de la pagina global*/
 
 *{
-    font-family: "Rethink Sans", sans-serif;
     font-family: "DM Sans", sans-serif;
     margin: 0%;
     padding: 0%;
@@ -80,7 +78,6 @@
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
-            /* width: 65vh; */
             height: 25vh;
             margin: 0 auto;
             border: 10px double #510d1b;
@@ -99,7 +96,6 @@
         background-image: url(../assets/img/fondoamk.JPG);
         background-size: cover;
         padding: 15px;
-        font-family: "Rethink Sans", sans-serif;
         .product{
             display: grid;
             grid-template-rows: 36px auto;
@@ -111,6 +107,7 @@
                 border: #ccc01a 3px solid;
                 grid-area:h3;
                 color: aqua;
+                
             }
             img{
                 width: 150px;
@@ -121,6 +118,7 @@
                 padding-left: 10px;
                 border: #ccc01a 3px solid;
                 grid-area: p;
+                
                 a{
                     text-decoration: none;
                     color: aqua;
@@ -285,7 +283,6 @@
         background-image: url(../assets/img/fondoamk.JPG);
         background-size: cover;
         padding: 15px;
-        font-family: "Rethink Sans", sans-serif;
         .product{
             h3{
                 text-align: center;
@@ -362,6 +359,11 @@
     background-image: url(../assets/img/fondoamk.JPG);
     background-size: cover;
     text-align: center;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
     h1{
         padding: 10px;
     }
@@ -372,8 +374,23 @@
         padding: 0 25px 25px 25px;
         display: inline-block;
         box-shadow: #3b5998 0px 0px 5px 5px;
+        .contactomapa{
+            display: flex;
+            flex-direction: column;
+        
 
+        .formulariocontacto{
+        
+            div{
+                margin: 5px;
+            }
+        }
+
+    }
     } 
+    .mapa{
+        padding: 25px;
+    }
 
 }
 
