@@ -144,7 +144,9 @@
     z-index: 10;
 }
 
-
+.btn-clima{
+    margin-top: 20px;
+}
 .footer{
     background-color: rgb(60, 59, 68);
     color: aliceblue;
@@ -219,7 +221,7 @@
     .gheader{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         .headarfondo {
             width: 100vw;
